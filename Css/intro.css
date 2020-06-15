@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+/* base */
+* {margin:0; padding:0;}
+body{font-family:"돋움", Dotum, verdana, arial; font-size:11px; color:#777;}
+img, fieldset{border:0 none;}
+legend, caption{visibility:hidden; width:0; height:0; margin:0; padding:0; font-size:0; line-height:0;}
+ol,ul,li{list-style:none;}
+em{font-style:normal;}
+a{font-family:"돋움", Dotum, verdana, arial; font-size:11px; color:#777; text-decoration:none; outline:none;}
+
+select{height:19px; padding:1px; font-family:"돋움", Dotum, verdana, arial; font-size:11px; color:#706d6e; vertical-align:middle;}
+textarea{padding:9px; background:#fff; border:1px #d6d6d6 solid; font-family:"돋움", Dotum, verdana, arial; font-size:11px; color:#787878;}
+
+#wrap {}
