@@ -399,7 +399,7 @@ ol li::before {
 /*******************************************************************************/
 /*******************************************************************************/
 @media screen and (max-width: 650px) {
-  header, .section-head{
+  header, .section-head, .content-container{
     width: 96%;
     padding: 2%;
   }
@@ -481,7 +481,7 @@ ol li::before {
     margin-top: -5%;
     padding: 0 20% 5% 20%;
   }
-  .img-wei{
+  .img-ch{
     padding-top: 5%;
     width: 100%;
   }
