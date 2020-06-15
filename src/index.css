@@ -96,7 +96,8 @@ footer{
 }
 .title-main{
   height: 1%;
-  font-weight: bold;
+  font-weight: 800;
+  letter-spacing:1.5px;
   font-size: 33px;
 }
 .title-sub{
@@ -494,7 +495,6 @@ ol li::before {
   }
   .title-main{
     height: 5%;
-    font-weight: bold;
     font-size: 35px;
     padding: 5%;
     margin: auto;
