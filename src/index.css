@@ -91,13 +91,13 @@ footer{
 /*******************************************************************************/
 /*******************************************************************************/
 .title-main, .title-sub{
-  font-family: 'Catamaran', sans-serif;
+  font-family: 'Rubik', sans-serif;
   color: var(--main-color);
 }
 .title-main{
   height: 1%;
   font-weight: 800;
-  letter-spacing:1.5px;
+  letter-spacing:1px;
   font-size: 33px;
 }
 .title-sub{
