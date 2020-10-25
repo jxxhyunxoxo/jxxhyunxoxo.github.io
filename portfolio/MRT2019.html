@@ -79,8 +79,8 @@
             <h2>Objective Function</h2>
             <article>
                 <h3>Goal</h3>
-                <p>Our goal is to minimize the maximun transfer in each station. The objective function conduct the 12 transfer stations to apply the following model, and minimize the value of "Y".</p>
-                <div class="quote"><h2>Objective Function:</h2>
+                <p>Our goal is to minimize the maximun transfer in each station. The objective function conducted the 12 transfer stations to apply the following model, and minimize the value of "Y".</p>
+                <div class="quote"><h2>Function of Minimizing the Maximum Transfer:</h2>
                 Min. Max {Y1, Y2, Y3, Y4, Y5, Y6, Y7, Y8, Y9, Y10, Y11, Y12}</div>
             </article>
           </section>
@@ -88,27 +88,84 @@
           <section>
             <h2>Constraints</h2>
             <article>
-              <h3>Transfer station</h3>
+              <h3>12 Transfer Stations</h3>
+              <p>The amount of passing route that each transfer station(Yi) obtains would be:
+                  Y1 =X1+X2+X3+X4+X5+X6+X11+X13+X17+X22+X27(中山)
+                  Y2 = X1+X2+X3+X5+X6+X10+X16+X18+X19+X20+X21+X22+X 23+X27（北車）
+                  Y3 = X2+X9+X10+X11+X13+X16+X17+X18+X19+X20+X21+X22  （西門）
+                  Y4 = X1+X4+X5+X6+X9+X10+X11+X12+X13+X18+X23+X27 （中正紀念堂）
+                  Y5 = X4+X7+X11+X13+X15+X17+X21+X22+X26+X27+X29+X30+X33+X35+X36（松江南京）
+                  Y6 = X1+X2+X3+X4+X5+X6+X7+X8+X15+X21+X26+X30+X33+X35+X36（民權西路）
+                  Y7 = X4+X11+X13+X17+X22+X27+X28+X29+X30（南京復興）
+                  Y8 = X3+X7+X10+X15+X16+X19+X20+X21+X22+X23+X25+X26+X29+X33+X34+X35+X36（忠孝新生）
+                  Y9 = X3+X10+X13+X16+X19+X22+X23+X24+X25+X26+X28+X34+X35（忠孝復興）
+                  Y10 = X4+X5+X6+X7+X12+X15+X18+X20+X23+X25+X27+X29+X32+X33+X34+X36（東門）
+                  Y11 = X5+X6+X12+X13+X18+X19+X23+X24+X27+X28+X31+X32+X33+X34+X35（大安）
+                  Y12 = X7+X9+X10+X11+X12+X13+X14+X15+X20+X25+X29+X32+X34+X36（古亭）
+              </p>
             </article>
             <article>
               <h3>Direct to destination</h3>
+              <p>X1+X2+X3+X4+X5+X6+X7+X8 = 1（淡水）
+                X1+X9+X10+X11+X12+X13+X14+X15= 1（新店）
+                X2+X9+X16+X17+X18+X19+X20+X21= 1（頂埔）
+                X3+X10+X16+X22+X23+X24+X25+X26= 2（南港）
+                X4+X11+X17+X22+X27+X28+X29+X30= 1（松山）
+                X5+X12+X18+X23+X27+X31+X32+X33= 1（象山）
+                X6+X13+X19+X24+X28+X31+X34+X35= 1（動物園）
+                X7+X14+X20+X25+X29+X32+X34+X35= 1（南勢角）
+                X8+X15+X21+X26+X30+X33+X35+X36 = 1（大橋頭）
+              </p>
             </article>
             <article>
               <h3>Reachability</h3>
+              <p>To prevent from the isolated station:
+                X11+X13+X17+X22 >= 1（北門）
+                X9+X10+X11+X13 >= 1（小南門）
+                X1+X5+X6+X18+X23+X27 >=1（台大醫院）
+                X3+X10+X16+X19+X20+X21+X22+X23 >= 1（善導寺）
+                X1+X2+X3+X4+X5+X6 >= 1（雙連）
+                X7+X15+X21+X26+X30+X33+X35+X36 >= 1（中山國小）
+                X7+X15+X21+X26+X30+X33+X35+X36 >= 1（行天宮）
+                X5+X6+X12+X18+X23+X27+X32+X33+X34 >= 1（大安森林公園）
+              </p>
             </article>
             <article>
               <h3>Min max</h3>
+              <p>f >= Y1, Y2, Y3, Y4, Y5, Y6, Y7, Y8, Y9, Y10, Y11, Y12
+              </p>
             </article>
           </section>
           <div class="divider"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
           <section>
             <h2>Execution Result</h2>
-            <h3>New version of Taipei MRT Route</h3>
+            <article>
+              <div class="col col-50-percent">
+                <h3>Excel Solver</h3>
+                <p>To find the solution, our team proceed with <b>Excel Solver (規劃求解)</b> and acquired the following solution:
+
+                <mark>X3, X11, X18, X24, X36</mark> = 1 (marked as red in result table) which means each of these 5 routes has to be a <mark>full directive route</mark>.
+                </p>
+              </div>
+              <div class="col col-50-percent"><img src="../img/result.png" class="img-work-small">
+              </div>
+            </article>
+            <article><h3>New version of Taipei MRT Route Map</h3>
+              <p>
+                <img src="../img/newMRT.png" alt="img-work-large" class="img-work-large">
+              </p>
+            </article>
           </section>
           <div class="divider"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
           <section>
             <h2>Conclusion</h2>
             <h3>Excel Solver</h3>
+            <p>1-透過規劃求解(Excel Solver)，可以得知哪些根據我們預定規則設計的路線能減少整體轉運的次數，並且可以避免孤島(Isolated Station)的情形發生
+
+                2-然而我們的限制市(Constraint)規則是以一般性去做假設，並未考慮到轉運站的轉運人數、直達人數，以及時間的尖峰問題
+
+                3-若有加以考慮，較能符合實際上的運輸需求，達到更佳的轉乘效率。
+            </p>
           </section>
         </div>
         <footer> 
