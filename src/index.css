@@ -1,4 +1,4 @@
-:root {--main-color: rgb(39, 120, 220);}
+:root {--main-color: rgb(20, 120, 220);}
 
 body {
   margin: 0;
@@ -125,12 +125,12 @@ b{
   display: inline;  
 }
 .highlight:hover{
-  background: linear-gradient(180deg,rgba(255,255,255,0) 50%, rgb(169, 220, 222) 50%);
+  background: linear-gradient(180deg,rgba(255,255,255,0) 20%, rgb(133, 187, 245) 50%);
   display: inline; 
   color: inherit;
 }
 mark{
-  background: linear-gradient(180deg,rgba(255,255,255,0) 60%, rgb(169, 220, 222) 60%);
+  background: linear-gradient(180deg,rgba(255,255,255,0) 30%, rgb(133, 187, 245) 60%);
   display: inline; 
   color: inherit;
 }
@@ -161,7 +161,7 @@ h3{
   font-weight: 800;
   letter-spacing:2px;
   text-transform: uppercase;
-  color: #7e7e7e;
+  color: #333;
   margin: 1% 0;
 }
 ol{
