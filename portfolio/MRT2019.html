@@ -17,7 +17,7 @@
     <div id="root">
       <div class="wrapper">
         <header>
-          <a activeclassname="active" href="../index.html">
+          <a activeclassname="active" href="../portfolio.html">
             <span class="title-main">Chia-Hsien Chang</span>
           </a>
           <a class="nav-item" href="../about.html">About</a>
@@ -59,7 +59,7 @@
             <article>
               <div class="col col-50-percent">
                 <h3>Route</h3>
-                <p><b>Xi</b> stands for whether the <mark>route</mark> is direct to destination, and whether people have to transfer at the station. Xi equals to 1, in other words, route Xi is direct to destination, 0 otherwise. We define 36 routes as decision variables totally. (i = 1 to 36)
+                <p><b>Xi</b> stands for whether the <mark>route</mark> is direct to destination, and whether people have to transfer at the station. Each route comprises two terminal stations. There are 9 terminal tations shown as the table listed. In this issue, we simplified that Daqiaotou stands for Luzhou and Huilong. Xi equals to 1, in other words, route Xi is direct to destination, 0 otherwise. We define 36 routes as decision variables totally. (i = 1 to 36)
 
                 As we define every single route, we follow the rule of passing the fewest transfer stations and the fewest general stations in this order.
                 </p>
@@ -69,7 +69,7 @@
             </article>
             <article>
               <h3>Transfer Station</h3>
-              <p><b>Yi</b>, another decision variable, stands for the amount of route passing this <mark>transfer station</mark>. We define 12 transfer stations as decision variables totally. (i = 1 to 12)
+              <p><b>Yi</b>, another decision variable, stands for the amount of route passing this <mark>transfer station</mark>. We define 12 transfer stations as decision variables totally (as the table listed). (i = 1 to 12)
               </p>
               <img src="../img/12transfers.png" class="img-work-small">
             </article>
@@ -79,9 +79,8 @@
             <h2>Objective Function</h2>
             <article>
                 <h3>Goal</h3>
-                <p>Our goal is to minimize the maximun transfer in each station. The objective function conducted the 12 transfer stations to apply the following model, and minimize the value of "Y".</p>
-                <div class="quote"><h2>Function of Minimizing the Maximum Transfer:</h2>
-                Min. Max {Y1, Y2, Y3, Y4, Y5, Y6, Y7, Y8, Y9, Y10, Y11, Y12}</div>
+                <p>The 12 variables of transfer stations will have an unlimited maximun value without constraints. Consequently, we are going to create our objective function and constraints. Our goal is to minimize the maximun transfer in each station. The objective function conducted the 12 transfer stations to apply the following model, and minimize the value of "Y". Accordingly, the function of Minimizing the Maximum Transfers would be:</p>
+                <div class="quote"><h2>Min. Max{ Y1, Y2, Y3, Y4, Y5, Y6, Y7, Y8, Y9, Y10, Y11, Y12 }</h2></div>
             </article>
           </section>
           <div class="divider"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
