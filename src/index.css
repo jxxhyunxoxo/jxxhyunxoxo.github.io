@@ -125,12 +125,12 @@ b{
   display: inline;  
 }
 .highlight:hover{
-  background: linear-gradient(180deg,rgba(255,255,255,0) 20%, rgb(133, 187, 245) 50%);
+  background: linear-gradient(180deg,rgba(255,255,255,0) 20%, rgb(133, 187, 245) 30%);
   display: inline; 
-  color: inherit;
+  color: #ececec;
 }
 mark{
-  background: linear-gradient(180deg,rgba(255,255,255,0) 30%, rgb(133, 187, 245) 60%);
+  background: linear-gradient(180deg,rgba(255,255,255,0) 15%, rgb(133, 187, 245) 45%);
   display: inline; 
   color: inherit;
 }
