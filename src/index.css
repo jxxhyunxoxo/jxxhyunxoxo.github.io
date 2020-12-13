@@ -352,7 +352,7 @@ ol li::before {
 /*******************************************************************************/
 .project-block{
   width: 46%;
-  height: 242px;
+  height: 266px;
   margin: 2%;
   display: table;
   float: left;
@@ -397,6 +397,7 @@ ol li::before {
 .work-illustration{background-color: rgb(169, 220, 222);}
 .work-store24{background-color: rgb(236, 236, 236);}
 .work-twtaxi{background-color: rgb(255, 222, 100);}
+.work-alumni{background-color: rgb(248, 165, 30);}
 .work-ch2020{background-color: rgb(150, 200, 245);
             background: linear-gradient(180deg, rgba(169,207,248,1) 0%, rgba(150,200,245,1) 64%, rgba(79,157,240,1) 100%);
 }
