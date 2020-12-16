@@ -331,7 +331,7 @@ ol li::before {
 /*******************************************************************************/
 /*******************************************************************************/
 .img-title{
-  height: 30.3px;
+  height: 26px;
 }
 .img-ch{
   width: 100%;
@@ -508,8 +508,12 @@ ol li::before {
     font-size: 26.5px;
     padding: 5%;
     margin: auto;
-    display: block;
+
     text-align: center;
+  }
+  .img-title{
+    height: 30.3px;
+    padding: 2.2% 0 0 0;
   }
   .works-container {
     width: 100%;
