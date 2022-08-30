@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="../src/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+
+    <title>Adrian Chia-Hsien Chang</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root">
+      <div class="wrapper">
+        <header>
+          <a activeclassname="active" href="../portfolio.html">
+            <span class="title-main"><img src="../img/a01.svg" alt="thumbnail" class="img-title"></span>
+          </a>
+          <a class="nav-item" href="../about.html">About Me</a>
+          <a class="nav-item" href="../portfolio.html">Portfolio</a>
+        </header>
+        <div>
+          <section class="section-head">
+            <h3>Operation Research</h3>
+            <h1>MRT Route Program</h1>
+            <p>Applying our own transportation model in order to minimize the maximun frequency of transfer occurred in each terminal and solving this problem with programming solver in Excel.</p>
+            <a target="_blank" href="https://drive.google.com/file/d/1BoUTLMhInjBIlU8qVKVCBI7fuqN81yOD/view?usp=sharing">
+              <span class="highlight">"Read Full Slides"</span>
+            </a>
+            <img src="../img/mrtmap.png" alt="img-work-large" class="img-work-large">
+            <div class="col col-60-percent">
+              <div class="box-border-left">
+                <h3>Overview</h3>
+                Taipei MRT Route Programming is a final project from Operation Research Course.
+              </div>
+            </div>
+            <div class="col col-40-percent">
+              <div class="box-border-left">
+                <h3>Collaborators</h3>
+                Chia-Hsien Chang, Yu-Wei Chang, Cheng-Yu Yang
+              </div>
+              <div class="box-border-left">
+                <h3>Duration</h3>
+                May to June, 2019
+              </div>
+            </div>
+          </section>
+          <section>
+            <h2>Contents</h2>
+            <img src="../img/contents.png" class="img-work-large">
+          </section>
+          <div class="divider"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+          <section>
+            <h2>Decision Variables</h2>
+            <h3>Route</h3>
+            <article>
+              <div class="col col-50-percent">
+                <p><b>Xi</b> stands for <b>whether the route is direct to destination</b>. Each route comprises two terminal stations.There are 9 terminal stations shown as the table listed.
+                In this issue, we simplified that Daqiaotou stands for Luzhou and Huilong. 
+                Xi equals to 1, in other words, route Xi is direct to destination, 0 otherwise. We define 36 routes as decision variables totally. (i = 1 to 36)
+                </p>
+              </div>
+              <div class="col col-50-percent"><img src="../img/36routes.png" class="img-work-small">
+              </div>
+              <div class="col">
+                <p>As we define every single route, we follow the rule of (1)<mark>passing the fewest transfer stations</mark> and (2)<mark>the fewest general stations</mark> in order!
+
+                Most of these routes have specified directions based on the above rule we've made, whlie the following 3 routes we have to make more description and definition on them: X1, X34 and X35.
+                • <b>X1 (Tamsui to Xindian)</b> : Tamsui and Xindian, the terminal stations in red line and green line respectively. Since it need to meet the rule, this route must transfer at CKS Memorial Hall. As a result, X1 would be Tamsui ➡ CKS Memorial Hall ➡ Xindian.
+                • <b>X34 (Zoo to Nanshijiao)</b>: Zoo and Nanshijiao are the terminal stations in brown line and yellow line respectively. Since it need to meet the rule, this route must transfer at Daan Park and Dongmen in order. As a result, X34 would be Zoo ➡ Daan Park ➡ Dongmen ➡ Nanshijiao.
+                • <b>X35 (Zoo to Daqiaotou)</b>: Zoo and Daqiaotou are the terminal stations in brown line and yellow line respectively. Since it need to meet the rule, this route must transfer at Zhongxiao Fuxing and Zhongxiao Xingsheng in order. As a result, X35 would be Zoo ➡ Zhongxiao Fuxing ➡ Zhongxiao Xingsheng ➡ Daqiaotou. 
+                </p>
+              </div>
+            </article>
+            <article>
+              <h3>Transfer Station</h3>
+              <p><b>Yi</b>, another decision variable, stands for <b>the amount of route passing this transfer station</b>.
+              We define 12 transfer stations as decision variables totally (as the table listed). (i = 1 to 12)
+              </p>
+              <img src="../img/12transfers.png" class="img-work-small">
+            </article>
+          </section>
+          <div class="divider"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+          <section>
+            <h2>Objective Function</h2>
+            <article>
+                <h3>Goal</h3>
+                <p>The 12 variables of transfer stations will have unlimited maximun value without constraints. Consequently, we are going to create our objective function and constraints. Our goal is to minimize the maximun transfer in each station. The objective function conducted the 12 transfer stations to apply the following model, and minimize the value of "Y". Accordingly, the function of Minimizing the Maximum Transfers would be:</p>
+                <div class="quote"><h2>Min. Max{ Y1, Y2, Y3, Y4, Y5, Y6, Y7,<br> Y8, Y9, Y10, Y11, Y12 }</h2></div>
+            </article>
+          </section>
+          <div class="divider"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+          <section>
+            <h2>Constraints</h2>
+            <p>To minimize our solution(amount of transfers), we have to set up the constraints to keep the best value of solution space under control, otherwise it will have unlimeted maximun. Minimizing the Maximun issue basically has the following 4 constraints.
+            </p>
+            <article>
+              <h3>12 Transfer Stations</h3>
+              <p>The amount of passing route that each transfer station(Yi) obtains would be:
+                  • Y1 = X1+X2+X3+X4+X5+X6+X11+X13+X17+X22+X27 (中山)
+                  • Y2 = X1+X2+X3+X5+X6+X10+X16+X18+X19+X20+X21+X22+X 23+X27（北車）
+                  • Y3 = X2+X9+X10+X11+X13+X16+X17+X18+X19+X20+X21+X22  （西門）
+                  • Y4 = X1+X4+X5+X6+X9+X10+X11+X12+X13+X18+X23+X27 （中正紀念堂）
+                  • Y5 = X4+X7+X11+X13+X15+X17+X21+X22+X26+X27+X29+X30+X33+X35+X36（松江南京）
+                  • Y6 = X1+X2+X3+X4+X5+X6+X7+X8+X15+X21+X26+X30+X33+X35+X36（民權西路）
+                  • Y7 = X4+X11+X13+X17+X22+X27+X28+X29+X30（南京復興）
+                  • Y8 = X3+X7+X10+X15+X16+X19+X20+X21+X22+X23+X25+X26+X29+X33+X34+X35+X36（忠孝新生）
+                  • Y9 = X3+X10+X13+X16+X19+X22+X23+X24+X25+X26+X28+X34+X35（忠孝復興）
+                  • Y10 = X4+X5+X6+X7+X12+X15+X18+X20+X23+X25+X27+X29+X32+X33+X34+X36（東門）
+                  • Y11 = X5+X6+X12+X13+X18+X19+X23+X24+X27+X28+X31+X32+X33+X34+X35（大安）
+                  • Y12 = X7+X9+X10+X11+X12+X13+X14+X15+X20+X25+X29+X32+X34+X36（古亭）
+              </p>
+            </article>
+            <article>
+              <h3>Direct to destination</h3>
+              <p>The whole system has 8 terminal stations, and in this constraint we are able to decide on which another station has to become its terminal.
+                • X1+X2+X3+X4+X5+X6+X7+X8 = 1（淡水）
+                • X1+X9+X10+X11+X12+X13+X14+X15= 1（新店）
+                • X2+X9+X16+X17+X18+X19+X20+X21= 1（頂埔）
+                • X3+X10+X16+X22+X23+X24+X25+X26= 2（南港）
+                • X4+X11+X17+X22+X27+X28+X29+X30= 1（松山）
+                • X5+X12+X18+X23+X27+X31+X32+X33= 1（象山）
+                • X6+X13+X19+X24+X28+X31+X34+X35= 1（動物園）
+                • X7+X14+X20+X25+X29+X32+X34+X35= 1（南勢角）
+                • X8+X15+X21+X26+X30+X33+X35+X36 = 1（大橋頭）
+              </p>
+            </article>
+            <article>
+              <h3>Reachability</h3>
+              <p>Isolated Station means where the station has no route passes through. It usually occurs on the station that is between 2 tranfefer station. We ensure the 8 following stations will have at least 1 route passing on it which is reachable:
+                • X11+X13+X17+X22 ≥ 1（北門）
+                • X9+X10+X11+X13 ≥ 1（小南門）
+                • X1+X5+X6+X18+X23+X27 ≥ 1（台大醫院）
+                • X3+X10+X16+X19+X20+X21+X22+X23 ≥ 1（善導寺）
+                • X1+X2+X3+X4+X5+X6 ≥ 1（雙連）
+                • X7+X15+X21+X26+X30+X33+X35+X36 ≥ 1（中山國小）
+                • X7+X15+X21+X26+X30+X33+X35+X36 ≥ 1（行天宮）
+                • X5+X6+X12+X18+X23+X27+X32+X33+X34 ≥ 1（大安森林公園）
+              </p>
+            </article>
+            <article>
+              <h3>Min max</h3>
+              <p>The most significant constraint of this question:
+                • f ≥ Y1, Y2, Y3, Y4, Y5, Y6, Y7, Y8, Y9, Y10, Y11, Y12
+              </p>
+            </article>
+          </section>
+          <div class="divider"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+          <section>
+            <h2>Execution Result</h2>
+            <article>
+              <h3>Solver on Excel</h3>
+              <div class="col col-50-percent">
+                <p>To find the solution, our team proceed with <b>Excel Solver (規劃求解)</b>. It is required to input the decision variables and objective function, and set up the regulations we have created.  Hence, our team obtained the following best value of solution and function:
+
+                <mark>X3, X11, X18, X24, X36</mark> = 1 (marked as red in result table) which means each of these 5 routes has to be <mark>full directive routes</mark>.
+
+                Each single transfer station has 2 transfers on it and 1 on Nanjing Fuxing. The minimized maximun is <mark>23 transfers totally</mark>. (marked in yellow background).
+                </p>
+              </div>
+              <div class="col col-50-percent">
+                <img src="../img/result.png" class="img-work-small">
+              </div>
+              <div>
+                <img src="../img/excel.png" alt="img-work-large" class="img-work-large">
+              </div>
+              <div class="col col-50-percent">
+                <img src="../img/solver.png" class="img-work-small">
+              </div>
+            </article>
+          </section>
+          <section>
+            <h2>⭐️ New Version of Taipei Mass Rapid Transit Route Map</h2>
+            <article>
+              <p>
+                Based on the 5 routes which equal to 1, we are able to redesign a new Taipei MRT map!
+
+                There are also 5 routes on the new one:
+                 •  Xindian to Songshan
+                 •  Nangang to Zoo
+                 •  Nanshijiao to Daqiaotou
+                 •  <b>Tamsui</b>(originally terminal in red line) <b>to Nangang</b>(originally terminal in blue line) </b>
+                 •  <b>Dingpu</b>(originally terminal in blue line) <b>to Xiangshan</b>(originally terminal in red line) 
+
+                 It is noticed that the last 2 ones are new combinations.
+              </p>
+              <p>
+                <img src="../img/newMRT.png" alt="img-work-large" class="img-work-large">
+              </p>
+            </article>
+          </section>
+          <div class="divider"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+          <section>
+            <h2>Conclusion</h2>
+            <p>1) 透過規劃求解(Excel Solver)，可以得知哪些根據我們預定規則設計的路線能減少整體轉運的次數，並且可以避免孤島(Isolated Station)的情形發生
+
+                2) 然而我們的限制式（Constraint）規則是以一般性去做假設，並未考慮到轉運站的轉運人數、直達人數，以及時間的尖峰問題
+
+                3) 若有加以考慮，較能符合實際上的運輸需求，達到更佳的轉乘效率。
+            </p>
+          </section>
+        </div>
+        <footer> 
+          <a target="_blank" rel="noopener noreferrer" href="https://instagram.com/cxxhxxchhh"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram" class="svg-inline--fa fa-w-16 fa fa-instagram" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M15.233 5.488c-.843-.038-1.097-.046-3.233-.046s-2.389.008-3.232.046c-2.17.099-3.181 1.127-3.279 3.279-.039.844-.048 1.097-.048 3.233s.009 2.389.047 3.233c.099 2.148 1.106 3.18 3.279 3.279.843.038 1.097.047 3.233.047 2.137 0 2.39-.008 3.233-.046 2.17-.099 3.18-1.129 3.279-3.279.038-.844.046-1.097.046-3.233s-.008-2.389-.046-3.232c-.099-2.153-1.111-3.182-3.279-3.281zm-3.233 10.62c-2.269 0-4.108-1.839-4.108-4.108 0-2.269 1.84-4.108 4.108-4.108s4.108 1.839 4.108 4.108c0 2.269-1.839 4.108-4.108 4.108zm4.271-7.418c-.53 0-.96-.43-.96-.96s.43-.96.96-.96.96.43.96.96-.43.96-.96.96zm-1.604 3.31c0 1.473-1.194 2.667-2.667 2.667s-2.667-1.194-2.667-2.667c0-1.473 1.194-2.667 2.667-2.667s2.667 1.194 2.667 2.667zm4.333-12h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm.952 15.298c-.132 2.909-1.751 4.521-4.653 4.654-.854.039-1.126.048-3.299.048s-2.444-.009-3.298-.048c-2.908-.133-4.52-1.748-4.654-4.654-.039-.853-.048-1.125-.048-3.298 0-2.172.009-2.445.048-3.298.134-2.908 1.748-4.521 4.654-4.653.854-.04 1.125-.049 3.298-.049s2.445.009 3.299.048c2.908.133 4.523 1.751 4.653 4.653.039.854.048 1.127.048 3.299 0 2.173-.009 2.445-.048 3.298z"></path></svg></a>
+          <a target="_blank" rel="noopener noreferrer" href="https://c-h-changch.medium.com/"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="medium" class="svg-inline--fa fa-w-16 fa fa-medium" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 45 45"><path fill="currentColor" d="M 18 41.578125 C 18 42.46875 17.523438 43 16.847656 43 C 16.609375 43 16.34375 42.933594 16.0625 42.792969 L 5.164063 37.273438 C 4.523438 36.949219 4 36.089844 4 35.367188 L 4 8.3125 C 4 7.597656 4.378906 7.175781 4.921875 7.175781 C 5.113281 7.175781 5.328125 7.226563 5.550781 7.339844 L 5.933594 7.535156 C 5.933594 7.535156 5.9375 7.535156 5.9375 7.535156 L 17.949219 13.617188 C 17.96875 13.628906 17.984375 13.648438 18 13.664063 Z M 30.585938 8.882813 L 31.320313 7.675781 C 31.582031 7.246094 32.0625 7 32.550781 7 C 32.664063 7 32.78125 7.015625 32.894531 7.046875 C 32.980469 7.066406 33.070313 7.097656 33.164063 7.144531 L 45.832031 13.558594 C 45.835938 13.558594 45.835938 13.5625 45.835938 13.5625 L 45.847656 13.566406 C 45.855469 13.570313 45.855469 13.582031 45.863281 13.585938 C 45.925781 13.636719 45.953125 13.722656 45.910156 13.792969 L 33.292969 34.558594 L 32.003906 36.675781 L 23.644531 20.304688 Z M 20 30.605469 L 20 17.5625 L 28.980469 35.15625 L 20.902344 31.066406 Z M 46 41.578125 C 46 42.414063 45.503906 42.890625 44.773438 42.890625 C 44.445313 42.890625 44.070313 42.796875 43.675781 42.597656 L 41.867188 41.679688 L 33.789063 37.589844 L 46 17.496094 Z"></path></svg></a>
+          <a target="_blank" rel="noopener noreferrer" href="mailto:107356020@nccu.edu.tw"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="email" class="svg-inline--fa fa-w-16 fa fa-email" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="currentColor" d="M12 12.713l-11.985-9.713h23.97l-11.985 9.713zm0 2.574l-12-9.725v15.438h24v-15.438l-12 9.725z"></path></svg></a>
+          <p class="footerText">© all rights reserved. Adrian Chia-Hsien Chang. 2020.</p>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

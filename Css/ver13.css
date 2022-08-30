@@ -1,0 +1,207 @@
+@charset "utf-8";
+
+/* visual bg 이미지 변경 , bg 사이 간격 */
+.bgMain { }
+.bgProfile { }
+.bgDiscography { }
+.bgPortfolio { }
+.bgVideos { }
+.bgGallery { }
+.bgExtras { }
+.bgMobile { }
+.bgNotice {background-color:#FFFFFF; background-image:url('//socdn.smtown.com/upload/starhome/layout/taeyeon/ver13/NoticeBgImg.jpg?20200226165851');}
+.bgSchedule {background-color:#FFFFFF; background-image:url('//socdn.smtown.com/upload/starhome/layout/taeyeon/ver13/ScheduleBgImg.jpg?20200226165851');}
+.bgFanBoard {background-color:#FFFFFF; background-image:url('//socdn.smtown.com/upload/starhome/layout/taeyeon/ver13/FanBoardBgImg.jpg?20200226165851');}
+.bgFromStar {background-color:#FFFFFF; background-image:url('//socdn.smtown.com/upload/starhome/layout/taeyeon/ver13/FromStarBgImg.jpg?20200226165851');}
+.bgStaffDiary {background-color:#FFFFFF; background-image:url('//socdn.smtown.com/upload/starhome/layout/taeyeon/ver13/StaffDiaryBgImg.jpg?20200226165851');}
+
+.MainSpace {}
+.ProfileSpace {}
+.PortfolioSpace {}
+.DiscographySpace {}
+.VideosSpace {}
+.GallerySpace {}
+.ExtrasSpace {}
+.MobileSpace {}
+.NoticeSpace {height:20px;}
+.ScheduleSpace {height:20px;}
+.FanBoardSpace {height:20px;}
+.StaffDiarySpace {height:20px;}
+.FromStarSpace {height:20px;}
+
+.artCol1{color:#000000;}
+.artBg1{[[TitleBgColor]]}
+.tb_th1{background-color:#FFFFFF; color:#000000;}
+.table1, .boardList {border-top-color:#CCCCCC; border-bottom-color:#CCCCCC;}
+
+.schdule_bg{border-color:#FFFFFF;}
+
+
+
+#wrap #header{ background-image:url('//socdn.smtown.com/upload/starhome/layout/taeyeon/ver13/MenuBarImg.png?20200226165851');}
+#header #gnb{}
+#header #gnb li a,
+#header h1 a,
+#header #tUtil li a{ background-image:url('//socdn.smtown.com/upload/starhome/layout/taeyeon/ver13/MenuImg.png?20200226165851');}
+
+#header #gnb li a.Profile { }
+#header #gnb li a.Discography { }
+#header #gnb li a.Portfolio { }
+#header #gnb li a.Videos { }
+#header #gnb li a.Gallery { }
+#header #gnb li a.Extras { }
+#header #gnb li a.Mobile { }
+
+#header #gnb li a.Profile_hover { }
+#header #gnb li a.Discography_hover { }
+#header #gnb li a.Portfolio_hover { }
+#header #gnb li a.Videos_hover { }
+#header #gnb li a.Gallery_hover { }
+#header #gnb li a.Extras_hover { }
+#header #gnb li a.Mobile_hover { } 
+
+#header #tUtil li a.Notice {width:35px; background-position:0px 0px;}
+#header #tUtil li a.Schedule {width:58px; background-position:-35px 0px;}
+#header #tUtil li a.FanBoard {width:60px; background-position:-93px 0px;}
+#header #tUtil li a.FromStar {width:63px; background-position:-153px 0px;}
+#header #tUtil li a.StaffDiary {width:72px; background-position:-216px 0px;}        
+
+.bgMain #wrap #contents .con_round_top, .bgMain #wrap #contents .con_round_bottom, .bgMain #wrap #contents #con_inner {}
+.bgMain #wrap #contents .con_round_top, .bgMain #wrap #contents .con_round_bottom, .bgMain #wrap #contents #con_inner {}
+.bgProfile #wrap #subCon .con_round_top, .bgProfile #wrap #subCon .con_round_bottom,  .bgProfile #wrap #subCon #con_inner {}
+.bgDiscography #wrap #subCon .con_round_top, .bgDiscography #wrap #subCon .con_round_bottom,  .bgDiscography #wrap #subCon #con_inner {}
+.bgPortfolio #wrap #subCon .con_round_top, .bgPortfolio #wrap #subCon .con_round_bottom,  .bgPortfolio #wrap #subCon #con_inner {}
+.bgVideos #wrap #subCon .con_round_top, .bgVideos #wrap #subCon .con_round_bottom,  .bgVideos #wrap #subCon #con_inner {}
+.bgGallery #wrap #subCon .con_round_top, .bgGallery #wrap #subCon .con_round_bottom,  .bgGallery #wrap #subCon #con_inner {}
+.bgExtras #wrap #subCon .con_round_top, .bgExtras #wrap #subCon .con_round_bottom,  .bgExtras #wrap #subCon #con_inner {}
+.bgMobile #wrap #subCon .con_round_top, .bgMobile #wrap #subCon .con_round_bottom,  .bgMobile #wrap #subCon #con_inner {}
+.bgNotice #wrap #subCon .con_round_top, .bgNotice #wrap #subCon .con_round_bottom,  .bgNotice #wrap #subCon #con_inner {background-image:url('//socdn.smtown.com/upload/starhome/layout/taeyeon/ver13/NoticeContentsBgImg.png?20200226165851');}
+.bgSchedule #wrap #subCon2 .con_round_top, .bgSchedule #wrap #subCon2 .con_round_bottom, .bgSchedule #wrap #subCon2 #con_inner {background-image:url('//socdn.smtown.com/upload/starhome/layout/taeyeon/ver13/ScheduleContentsBgImg.png?20200226165851');}
+.bgFanBoard #wrap #subCon .con_round_top, .bgFanBoard #wrap #subCon .con_round_bottom,  .bgFanBoard #wrap #subCon #con_inner {background-image:url('//socdn.smtown.com/upload/starhome/layout/taeyeon/ver13/FanBoardContentsBgImg.png?20200226165851');}
+.bgStaffDiary #wrap #subCon .con_round_top, .bgStaffDiary #wrap #subCon .con_round_bottom,  .bgStaffDiary #wrap #subCon #con_inner {background-image:url('//socdn.smtown.com/upload/starhome/layout/taeyeon/ver13/StaffDiaryContentsBgImg.png?20200226165851');}
+.bgFromStar #wrap #subCon .con_round_top, .bgFromStar #wrap #subCon .con_round_bottom,  .bgFromStar #wrap #subCon #con_inner {background-image:url('//socdn.smtown.com/upload/starhome/layout/taeyeon/ver13/FromStarContentsBgImg.png?20200226165851');}
+
+#abView, #abView #inner {background-image:url('//socdn.smtown.com/upload/starhome/layout/taeyeon/ver13/ProfileLayerBgImg.png?20200226165851');}
+/*---------------------------------------common img ---------------------------------*/
+#header #tUtil,  
+.paging a.prev, 
+.paging a.next, 
+.schedule tbody td .schWrap .today .todayIcon, 
+#footBan ul.footMenu li, 
+#footBan ul.footMenu li a, 
+#footBan .preVer strong, 
+#footCopy li,
+#footCopy li a,
+.lst_mv ul li .pic .btnPlay, 
+.lst_mv .info .num, 
+.n_album .nAb_con .info .num, 
+#news li .txt .dot,     
+#ufoTown li, 
+.schLf .prev, 
+.schLf .next, 
+#newAlbum .txt .num, 
+#latestMV ul li .pic .btnPlay, 
+#latestMV .info .num, 
+.commentBox .cnt_write p.tit, 
+.cnt_write .tit,
+.mvList li .btnPlay, 
+.schd_top .ct .prev, 
+.schd_top .ct .next, 
+#boardV_util1 .bv_ut1 .cnt,
+#ltMv .mvBox .prev, 
+#ltMv .mvBox .next, 
+#ltMv .mvBox li .btnPlay,
+.pfCon .info li .dot,
+.pfBoard li .dot,
+.dimClose,
+.mvdata ul li .twitter,
+.mvdata ul li .facebook ,
+.more,
+.table1 tbody td .abInfo_off,
+.table1 tbody td .abInfo_on,
+.table1 tbody td .ico_lyrics_on,
+.table1 tbody td .ico_lyrics_off,
+.table1 tbody td .ico_movicvideo_on,
+.table1 tbody td .ico_movicvideo_off,
+.table1 tbody td .ico_ar_on,
+.table1 tbody td .ico_ar_off,
+.table1 tbody td .ico_mr_on,
+.table1 tbody td .ico_mr_off,
+.table1 tbody td .ico_ituns_on,
+.table1 tbody td .ico_ituns_off,
+.ico_down_mr,
+.ico_down_ar,
+.slideList .prev,
+.slideList .next,
+.specList dd li,
+#abView .profile li,
+#ScheduleCalendar .schLayer .inner .schl_close,
+#ScheduleCalendar .schLayer
+{background-image:url('//socdn.smtown.com/upload/starhome/layout/taeyeon/ver13/CommonImg.png?20200226165851');}
+
+/*---------------------------------------board img-----------------------------------*/
+.paging a, .paging a span, .paging strong, .paging strong span, 
+.boardList td.story p .icoNew, 
+.boardList .tr_notice td .icoSpan, 
+.boardList td.story p .icoFile, 
+#boardV_tle h3 .icoNew, 
+#boardV_tle h3 .icoNews, 
+
+#boardV_con .dataFile span, 
+#boardV_util2 .ut_tag .icoTag,
+#boardV_util2 .ut_click .clk_recmd .clk_icon ,  
+#boardV_util2 .ut_click .clk_report .clk_icon, 
+#boardV_btm ul li, 
+.icoRec , 
+.icoDel , 
+.icoNotify , 
+.btnReply , 
+.icoReply,
+.btnBoardGroup,
+.boardList td.story .icoReply,
+.rep_list .div_reply .icoReply
+{background-image:url('//socdn.smtown.com/upload/starhome/layout/taeyeon/ver13/BoardImg.png?20200226165851');}
+
+/*---------------------------------------title img ---------------------------------*/
+.lst_mv h3, 
+.lst_photo h3, 
+.n_album h3, 
+#news h2,
+#ufoTown h2,
+#smtownNow h2,
+#toSchdule h2, 
+#newAlbum h2, 
+#latestMV h2, 
+#starTwr h2, 
+.h2_profile, 
+.h2_nRelease,
+.h2_video, 
+.h2_gallery, 
+.h2_extras, 
+.h2_mobile, 
+.h2_notice, 
+.h2_schedule, 
+.h2_fanboard, 
+.h2_fromstar, 
+.h2_staffdiary, 
+.h3_gpMember, 
+.h3_abIntro, 
+.h3_trInfo, 
+.h3_news, 
+.pf_awards h3,  
+.pf_career h3, 
+.galleryTop labe,
+#abView h4,
+#ltMv h2,
+#sch_board #newWork h2,
+.n_work h3
+{background-image:url('//socdn.smtown.com/upload/starhome/layout/taeyeon/ver13/TitleImg.png?20200226165851');}
+
+/*---------------------------------------button img ---------------------------------*/
+.btnButtonGroup {background-image:url('//socdn.smtown.com/upload/starhome/layout/taeyeon/ver13/ButtonImg.png?20200226165851');}
+.subtitle .tab .tabKorea, .tabFilm, .tabDrama, .tabCF, .tabMagazine, .tabTvShow, .tabDVD, .tabETC   {background-image:url('//socdn.smtown.com/upload/starhome/layout/taeyeon/ver13/ButtonImg.png?20200226165851');}
+
+#ScheduleCalendar .schLayer strong,
+#ScheduleCalendar .schLayer .inner{background-image:url('//socdn.smtown.com/upload/starhome/layout/taeyeon/ver13/ScheduleLayerImg.png?20200226165851');}
+
+   
