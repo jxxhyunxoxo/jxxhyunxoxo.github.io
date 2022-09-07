@@ -4,7 +4,7 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: 'Catamaran', sans-serif;
+  font-family: 'Raleway', sans-serif;
   background: #FAFAFA;
   font-size: 18px;
 }
@@ -91,12 +91,13 @@ footer{
 /*******************************************************************************/
 /*******************************************************************************/
 .title-main, .title-sub{
-  font-family: 'Rubik', sans-serif;
-  color: var(--main-color);
+  font-family: 'Lora', sans-serif;
+  /*color: var(--main-color);*/
+  color: #222;
 }
 .title-main{
   height: 1%;
-  font-weight: 800;
+  font-weight: 870;
   letter-spacing:1px;
   font-size: 33px;
 }
