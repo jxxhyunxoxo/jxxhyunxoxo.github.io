@@ -98,8 +98,8 @@ footer{
 .title-main{
   height: 1%;
   font-weight: 870;
-  letter-spacing:1px;
-  font-size: 33px;
+  /*letter-spacing:1px;*/
+  font-size: 28px;
 }
 .title-sub{
   font-weight: 100;
