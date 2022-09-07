@@ -91,7 +91,7 @@ footer{
 /*******************************************************************************/
 /*******************************************************************************/
 .title-main, .title-sub{
-  font-family: 'Lora', sans-serif;
+  font-family: 'Raleways', sans-serif;
   /*color: var(--main-color);*/
   color: #222;
 }
@@ -99,7 +99,7 @@ footer{
   height: 1%;
   font-weight: 870;
   /*letter-spacing:1px;*/
-  font-size: 28px;
+  font-size: 27px;
 }
 .title-sub{
   font-weight: 100;
