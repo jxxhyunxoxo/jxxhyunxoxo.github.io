@@ -4,7 +4,7 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: 'Raleway', sans-serif;
+  font-family: arial, sans-serif;
   background: #FAFAFA;
   font-size: 18px;
 }
@@ -92,7 +92,7 @@ footer{
 /*******************************************************************************/
 /*******************************************************************************/
 .title-main, .title-sub{
-  font-family: sans-serif;
+  font-family: arial, sans-serif;
   /*color: var(--main-color);*/
   color: #222;
 }
@@ -160,10 +160,10 @@ h2{
 }
 h3{
   font-size: 17px;
-  font-weight: 800;
+  font-weight: 300;
   letter-spacing:2px;
   text-transform: uppercase;
-  color: #333;
+  color: #555;
   margin: 1% 0;
 }
 ol{
@@ -394,7 +394,7 @@ ol li::before {
 /*******************************************************************************/
 /*******************************************************************************/
 .img-title{
-  height: 20.1px;
+  height: 38px;
 }
 .img-ch{
   width: 100%;
@@ -446,7 +446,7 @@ ol li::before {
   display: block;
 }
 .project-category{
-  font-weight: 600;
+  font-weight: 200;
   font-size: 15px;
   line-height: 20px;
 }
@@ -567,7 +567,7 @@ ol li::before {
     padding: 0%;
   }
   .title-main{
-    height: 50%;
+    height: 70%;
     font-size: 30px;
     padding: 3.5%
     margin: auto;
@@ -575,7 +575,7 @@ ol li::before {
     text-align: center;
   }
   .img-title{
-    height: 28px;
+    height: 35px;
     
     padding: 2% 2% 2% 2%;
   }
