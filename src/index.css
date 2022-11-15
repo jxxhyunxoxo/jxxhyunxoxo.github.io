@@ -567,7 +567,7 @@ ol li::before {
     padding: 0%;
   }
   .title-main{
-    height: 70%;
+    width: 100%;
     font-size: 30px;
     padding: 3.5%
     margin: auto;
@@ -575,7 +575,7 @@ ol li::before {
     text-align: center;
   }
   .img-title{
-    height: 35px;
+    height: 46px;
     
     padding: 2% 2% 2% 2%;
   }
