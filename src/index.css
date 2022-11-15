@@ -1,4 +1,4 @@
-:root {--main-color: rgb(20, 120, 220);}
+:root {--main-color: rgb(46, 146, 220);}
 
 body {
   margin: 0;
@@ -91,19 +91,19 @@ footer{
 /*******************************************************************************/
 /*******************************************************************************/
 .title-main, .title-sub{
-  font-family: 'Raleway', sans-serif;
+  font-family: sans-serif;
   /*color: var(--main-color);*/
   color: #222;
 }
 .title-main{
-  height: 1%;
+  height: 20%;
   font-weight: 870;
   /*letter-spacing:1px;*/
-  font-size: 27px;
+  font-size: 30px;
 }
 .title-sub{
   font-weight: 100;
-  font-size: 24px;
+  font-size: 28px;
   padding: 0 1%;
 }
 b{
@@ -126,12 +126,12 @@ b{
   display: inline;  
 }
 .highlight:hover{
-  background: linear-gradient(180deg,rgba(255,255,255,0) 20%, rgb(133, 187, 245) 30%);
+  background: linear-gradient(180deg,rgba(255,255,255,0) 20%, rgb(46, 146, 220) 20%);
   display: inline; 
-  color: #ececec;
+  color: #ffffff;
 }
 mark{
-  background: linear-gradient(180deg,rgba(255,255,255,0) 15%, rgb(133, 187, 245) 45%);
+  background: linear-gradient(180deg,rgba(255,255,255,0) 15%, rgb(46, 146, 220) 45%);
   display: inline; 
   color: inherit;
 }
@@ -229,6 +229,7 @@ ol li::before {
 /*******************************************************************************/
 /*******************************************************************************/
 .nav-item{
+  font-family: arial;
   color: inherit;
   text-decoration: none;
   padding: 1% 2%;
@@ -237,6 +238,7 @@ ol li::before {
   transition: background-color 0.5s ease;
 }
 .nav-item-work{
+  font-family: arial;
   color: black;
   text-decoration: none;
   padding: 1% 2%;
@@ -245,6 +247,7 @@ ol li::before {
   transition: background-color 0.5s ease;
 }
 .nav-item-about{
+  font-family: arial;
   color: black;
   text-decoration: none;
   padding: 1% 2%;
@@ -253,6 +256,7 @@ ol li::before {
   transition: background-color 0.5s ease;
 }
 .nav-item-art{
+  font-family: arial;
   color: black;
   text-decoration: none;
   padding: 1% 2%;
@@ -293,7 +297,7 @@ ol li::before {
 }
 .fil-cat{}
 .selectedClass{
-  background-color: #FF6C00;
+  background-color: rgb(46, 146, 220);
   color: white !important;
 }
 .btn {
@@ -313,7 +317,7 @@ ol li::before {
 .btn:hover {
   text-decoration: none;
   color: white;
-  background-color: #FF6C00;
+  background-color: rgb(46, 146, 220);
 }
 
 /* responsive */
@@ -562,16 +566,17 @@ ol li::before {
     padding: 0%;
   }
   .title-main{
-    height: 5%;
-    font-size: 22px;
+    height: 50%;
+    font-size: 30px;
     padding: 3.5%
     margin: auto;
 
     text-align: center;
   }
   .img-title{
-    height: 17.3px;
-    padding: 4.5% 1% 3.9% 1%;
+    height: 28px;
+    
+    padding: 2% 2% 2% 2%;
   }
   .works-container {
     width: 100%;
