@@ -575,7 +575,7 @@ ol li::before {
     text-align: center;
   }
   .img-title{
-    height: 46px;
+    width: 100%;
     
     padding: 2% 2% 2% 2%;
   }
