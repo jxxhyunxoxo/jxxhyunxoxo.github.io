@@ -365,15 +365,15 @@ ol li::before {
 }
 .fa-instagram:hover{
     color: white;
-    background-color: #ff3732;
+    background-color: var(--main-color);
 }
 .fa-medium:hover{
     color: white;
-    background-color: #00ab6c;
+    background-color: var(--main-color);
 }
 .fa-email:hover{
     color: white;
-    background-color: #171515;
+    background-color: var(--main-color);
 }
 .fa-back{
   padding-right: 16px;
