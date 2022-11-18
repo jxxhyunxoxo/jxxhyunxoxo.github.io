@@ -148,7 +148,7 @@ p{
   white-space: pre-line;
 }
 h1, h2{
-  color: #313131;
+  color: #333;
   font-family: 'Rubik', sans-serif;
 }
 h1{
@@ -159,10 +159,10 @@ h2{
 }
 h3{
   font-size: 17px;
-  font-weight: 300;
-  letter-spacing:2px;
+  font-weight: 400;
+  letter-spacing: 2px;
   text-transform: uppercase;
-  color: #555;
+  color: #999;
   margin: 1% 0;
 }
 ol{
